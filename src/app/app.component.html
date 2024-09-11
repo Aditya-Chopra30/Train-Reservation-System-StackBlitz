@@ -1,0 +1,18 @@
+<div class="container">
+<h1 class="title">🚂 Train Seat Reservation 🚂</h1>
+
+<div class="form">
+  <label for="seatRequest">Number of seats to book:</label>
+  <input id="seatRequest" type="number" [(ngModel)]="requestedSeats" />
+  <button (click)="bookSeats()">Book Seats</button>
+</div>
+
+<h2 class="layout-title">Seats Layout</h2>
+<div class="seat-layout">
+  <div *ngFor="let seat of seats" class="seat" [ngClass]="getSeatStatus(seat)" (mouseover)="hoverSeat = seat.id" (mouseleave)="hoverSeat = null">
+    {{ seat.id }}
+  </div>
+</div>
+
+<h3 class="booked-list">Seats Booked: {{ bookedSeats.join(', ') }}</h3>
+</div>
