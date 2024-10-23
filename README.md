@@ -16,6 +16,8 @@ Welcome to the **Train Reservation System**! 🎉 This Angular-based app allows 
 1. Clone the repo:
    ```bash
    git clone https://github.com/Aditya-Chopra30/Train-Reservation-System-StackBlitz.git
+2. Install the necessary dependencies:
+   npm install
 
 
 [Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/Aditya-Chopra30/Train-Reservation-System-StackBlitz)
